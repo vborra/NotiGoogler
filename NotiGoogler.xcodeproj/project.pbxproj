@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E78896361992B24700F01DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E78896351992B24700F01DBE /* main.m */; };
+		E78896391992B24700F01DBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78896381992B24700F01DBE /* ViewController.m */; };
+		E788963C1992B24700F01DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E788963B1992B24700F01DBE /* AppDelegate.m */; };
+		E788963E1992B24700F01DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E788963D1992B24700F01DBE /* Images.xcassets */; };
+		E78896411992B24800F01DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E788963F1992B24800F01DBE /* Main.storyboard */; };
+		E788964D1992B24800F01DBE /* NotiGooglerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E788964C1992B24800F01DBE /* NotiGooglerTests.m */; };
+		E788965D1992B27C00F01DBE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E788965C1992B27C00F01DBE /* NotificationCenter.framework */; };
+		E78896641992B27C00F01DBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E78896621992B27C00F01DBE /* InfoPlist.strings */; };
+		E78896671992B27C00F01DBE /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78896661992B27C00F01DBE /* TodayViewController.m */; };
+		E78896691992B27C00F01DBE /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78896681992B27C00F01DBE /* TodayViewController.xib */; };
+		E788966C1992B27C00F01DBE /* NotiGoogle.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E788965A1992B27C00F01DBE /* NotiGoogle.appex */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E78896471992B24800F01DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78896281992B24700F01DBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E788962F1992B24700F01DBE;
+			remoteInfo = NotiGoogler;
+		};
+		E788966A1992B27C00F01DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78896281992B24700F01DBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78896591992B27C00F01DBE;
+			remoteInfo = NotiGoogle;
+		};
+		E788966D1992B27C00F01DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78896281992B24700F01DBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78896591992B27C00F01DBE;
+			remoteInfo = NotiGoogle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E78896721992B27C00F01DBE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E788966C1992B27C00F01DBE /* NotiGoogle.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E78896301992B24700F01DBE /* NotiGoogler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotiGoogler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78896341992B24700F01DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78896351992B24700F01DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E78896371992B24700F01DBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E78896381992B24700F01DBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E788963A1992B24700F01DBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E788963B1992B24700F01DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E788963D1992B24700F01DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E78896401992B24800F01DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E78896461992B24800F01DBE /* NotiGooglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotiGooglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E788964B1992B24800F01DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E788964C1992B24800F01DBE /* NotiGooglerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotiGooglerTests.m; sourceTree = "<group>"; };
+		E788965A1992B27C00F01DBE /* NotiGoogle.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotiGoogle.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E788965C1992B27C00F01DBE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E78896601992B27C00F01DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78896611992B27C00F01DBE /* NotiGoogle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NotiGoogle.entitlements; sourceTree = "<group>"; };
+		E78896631992B27C00F01DBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E78896651992B27C00F01DBE /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		E78896661992B27C00F01DBE /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		E78896681992B27C00F01DBE /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E788962D1992B24700F01DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896431992B24800F01DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896571992B27C00F01DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E788965D1992B27C00F01DBE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E78896271992B24700F01DBE = {
+			isa = PBXGroup;
+			children = (
+				E78896321992B24700F01DBE /* NotiGoogler */,
+				E78896491992B24800F01DBE /* NotiGooglerTests */,
+				E788965E1992B27C00F01DBE /* NotiGoogle */,
+				E788965B1992B27C00F01DBE /* Frameworks */,
+				E78896311992B24700F01DBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E78896311992B24700F01DBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E78896301992B24700F01DBE /* NotiGoogler.app */,
+				E78896461992B24800F01DBE /* NotiGooglerTests.xctest */,
+				E788965A1992B27C00F01DBE /* NotiGoogle.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E78896321992B24700F01DBE /* NotiGoogler */ = {
+			isa = PBXGroup;
+			children = (
+				E78896371992B24700F01DBE /* ViewController.h */,
+				E78896381992B24700F01DBE /* ViewController.m */,
+				E788963A1992B24700F01DBE /* AppDelegate.h */,
+				E788963B1992B24700F01DBE /* AppDelegate.m */,
+				E788963D1992B24700F01DBE /* Images.xcassets */,
+				E788963F1992B24800F01DBE /* Main.storyboard */,
+				E78896331992B24700F01DBE /* Supporting Files */,
+			);
+			path = NotiGoogler;
+			sourceTree = "<group>";
+		};
+		E78896331992B24700F01DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E78896341992B24700F01DBE /* Info.plist */,
+				E78896351992B24700F01DBE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E78896491992B24800F01DBE /* NotiGooglerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E788964C1992B24800F01DBE /* NotiGooglerTests.m */,
+				E788964A1992B24800F01DBE /* Supporting Files */,
+			);
+			path = NotiGooglerTests;
+			sourceTree = "<group>";
+		};
+		E788964A1992B24800F01DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E788964B1992B24800F01DBE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E788965B1992B27C00F01DBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E788965C1992B27C00F01DBE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E788965E1992B27C00F01DBE /* NotiGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				E78896651992B27C00F01DBE /* TodayViewController.h */,
+				E78896661992B27C00F01DBE /* TodayViewController.m */,
+				E78896681992B27C00F01DBE /* TodayViewController.xib */,
+				E788965F1992B27C00F01DBE /* Supporting Files */,
+			);
+			path = NotiGoogle;
+			sourceTree = "<group>";
+		};
+		E788965F1992B27C00F01DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E78896601992B27C00F01DBE /* Info.plist */,
+				E78896611992B27C00F01DBE /* NotiGoogle.entitlements */,
+				E78896621992B27C00F01DBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E788962F1992B24700F01DBE /* NotiGoogler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78896501992B24800F01DBE /* Build configuration list for PBXNativeTarget "NotiGoogler" */;
+			buildPhases = (
+				E788962C1992B24700F01DBE /* Sources */,
+				E788962D1992B24700F01DBE /* Frameworks */,
+				E788962E1992B24700F01DBE /* Resources */,
+				E78896721992B27C00F01DBE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E788966B1992B27C00F01DBE /* PBXTargetDependency */,
+				E788966E1992B27C00F01DBE /* PBXTargetDependency */,
+			);
+			name = NotiGoogler;
+			productName = NotiGoogler;
+			productReference = E78896301992B24700F01DBE /* NotiGoogler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E78896451992B24800F01DBE /* NotiGooglerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78896531992B24800F01DBE /* Build configuration list for PBXNativeTarget "NotiGooglerTests" */;
+			buildPhases = (
+				E78896421992B24800F01DBE /* Sources */,
+				E78896431992B24800F01DBE /* Frameworks */,
+				E78896441992B24800F01DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78896481992B24800F01DBE /* PBXTargetDependency */,
+			);
+			name = NotiGooglerTests;
+			productName = NotiGooglerTests;
+			productReference = E78896461992B24800F01DBE /* NotiGooglerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E78896591992B27C00F01DBE /* NotiGoogle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E788966F1992B27C00F01DBE /* Build configuration list for PBXNativeTarget "NotiGoogle" */;
+			buildPhases = (
+				E78896561992B27C00F01DBE /* Sources */,
+				E78896571992B27C00F01DBE /* Frameworks */,
+				E78896581992B27C00F01DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotiGoogle;
+			productName = NotiGoogle;
+			productReference = E788965A1992B27C00F01DBE /* NotiGoogle.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E78896281992B24700F01DBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Virindh Borra";
+				TargetAttributes = {
+					E788962F1992B24700F01DBE = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					E78896451992B24800F01DBE = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = E788962F1992B24700F01DBE;
+					};
+					E78896591992B27C00F01DBE = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = E788962B1992B24700F01DBE /* Build configuration list for PBXProject "NotiGoogler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E78896271992B24700F01DBE;
+			productRefGroup = E78896311992B24700F01DBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E788962F1992B24700F01DBE /* NotiGoogler */,
+				E78896451992B24800F01DBE /* NotiGooglerTests */,
+				E78896591992B27C00F01DBE /* NotiGoogle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E788962E1992B24700F01DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E788963E1992B24700F01DBE /* Images.xcassets in Resources */,
+				E78896411992B24800F01DBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896441992B24800F01DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896581992B27C00F01DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78896691992B27C00F01DBE /* TodayViewController.xib in Resources */,
+				E78896641992B27C00F01DBE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E788962C1992B24700F01DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78896391992B24700F01DBE /* ViewController.m in Sources */,
+				E78896361992B24700F01DBE /* main.m in Sources */,
+				E788963C1992B24700F01DBE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896421992B24800F01DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E788964D1992B24800F01DBE /* NotiGooglerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78896561992B27C00F01DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78896671992B27C00F01DBE /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E78896481992B24800F01DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E788962F1992B24700F01DBE /* NotiGoogler */;
+			targetProxy = E78896471992B24800F01DBE /* PBXContainerItemProxy */;
+		};
+		E788966B1992B27C00F01DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E78896591992B27C00F01DBE /* NotiGoogle */;
+			targetProxy = E788966A1992B27C00F01DBE /* PBXContainerItemProxy */;
+		};
+		E788966E1992B27C00F01DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E78896591992B27C00F01DBE /* NotiGoogle */;
+			targetProxy = E788966D1992B27C00F01DBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E788963F1992B24800F01DBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E78896401992B24800F01DBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E78896621992B27C00F01DBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E78896631992B27C00F01DBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E788964E1992B24800F01DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E788964F1992B24800F01DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E78896511992B24800F01DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NotiGoogler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E78896521992B24800F01DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NotiGoogler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E78896541992B24800F01DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NotiGoogler.app/Contents/MacOS/NotiGoogler";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotiGooglerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		E78896551992B24800F01DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NotiGoogler.app/Contents/MacOS/NotiGoogler";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotiGooglerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		E78896701992B27C00F01DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotiGoogle/NotiGoogle.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotiGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E78896711992B27C00F01DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotiGoogle/NotiGoogle.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NotiGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E788962B1992B24700F01DBE /* Build configuration list for PBXProject "NotiGoogler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E788964E1992B24800F01DBE /* Debug */,
+				E788964F1992B24800F01DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E78896501992B24800F01DBE /* Build configuration list for PBXNativeTarget "NotiGoogler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78896511992B24800F01DBE /* Debug */,
+				E78896521992B24800F01DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E78896531992B24800F01DBE /* Build configuration list for PBXNativeTarget "NotiGooglerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78896541992B24800F01DBE /* Debug */,
+				E78896551992B24800F01DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E788966F1992B27C00F01DBE /* Build configuration list for PBXNativeTarget "NotiGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78896701992B27C00F01DBE /* Debug */,
+				E78896711992B27C00F01DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E78896281992B24700F01DBE /* Project object */;
+}
